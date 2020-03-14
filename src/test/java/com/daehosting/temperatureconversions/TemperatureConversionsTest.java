@@ -40,8 +40,5 @@ class TemperatureConversionsTest {
         BigDecimal expected = BigDecimal.valueOf(-23.82268);
         assertEquals(expected, actual);
     }
-
-
-
-
+    
 }
