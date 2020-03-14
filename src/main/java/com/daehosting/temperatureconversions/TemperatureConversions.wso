@@ -1,0 +1,96 @@
+<html xmlns:wso="http://www.dataaccess.com/schemas/WebServiceMetaData">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+                    body
+                    {
+                        margin-left: 2em;
+                    }                
+                    h1
+                    {
+                        margin-left: -0.8em;
+                    }                
+                    h2
+                    {
+                        margin-left: -0.8em;
+                        border-top: 1px solid;
+                    }                
+                    h3
+                    {
+                        margin-left: -0.8em;
+                    }                
+                    .title
+                    {
+                        margin-left: -0.8em;
+                        color: #000080;
+                        font-size: 1.7em;
+                        background-color: #99ccff;
+                        padding-top: 0.3em;
+                        padding-bottom: 0.3em;
+                    } 
+                    .intro
+                    {
+                        margin-left: -0.8em;
+                    }
+                    .frmheader
+                    {
+                        background: #dcdcdc;
+                        padding-top: 0.1em;
+                        padding-bottom: 0.2em;
+                    }
+                    .code
+                    {
+                        font-family: 'Courier New';
+                        background-color: lightyellow;
+                        padding: 0.3em;
+                    }
+                    font.value
+                    {
+                        color: darkblue;
+                        font: bold;
+                    }
+                    font.key
+                    {
+                        color: darkgreen;
+                        font: bold;
+                    }
+                </style>
+    <title>DataFlex Web Service for Temperature Conversions</title>
+  </head>
+  <body>
+    <center>
+      <p class="title">DataFlex Web Service for Temperature Conversions</p>
+    </center>
+    <p>
+      <span>DataFlex Web Service to convert temperature values between Celsius and Fahrenheit</span>
+    </p>
+                The following operations are available. For a formal definition, please review the
+                <a href="/services/TemperatureConversions.wso?WSDL">Service Description</a>.
+        <ul>
+      <li>
+        <b><a href="/services/TemperatureConversions.wso?op=CelsiusToFahrenheit">CelsiusToFahrenheit</a></b>
+        <br>
+        <span>Converts a Celsius Temperature to a Fahrenheit value</span>
+      </li>
+      <p></p>
+      <li>
+        <b><a href="/services/TemperatureConversions.wso?op=FahrenheitToCelsius">FahrenheitToCelsius</a></b>
+        <br>
+        <span>Converts a Fahrenheit Temperature to a Celsius value</span>
+      </li>
+      <p></p>
+      <li>
+        <b><a href="/services/TemperatureConversions.wso?op=WindChillInCelsius">WindChillInCelsius</a></b>
+        <br>
+        <span>Windchill temperature calculated with the formula of Steadman</span>
+      </li>
+      <p></p>
+      <li>
+        <b><a href="/services/TemperatureConversions.wso?op=WindChillInFahrenheit">WindChillInFahrenheit</a></b>
+        <br>
+        <span>Windchill temperature calculated with the formula of Steadman</span>
+      </li>
+      <p></p>
+    </ul>
+  </body>
+</html>
