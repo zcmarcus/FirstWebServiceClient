@@ -54,15 +54,15 @@ class TemperatureConversionsTest {
     void windChillInCelsiusSuccess() {
         ObjectFactory factory = new ObjectFactory();
         WindChillInCelsius windChillInCelsius = factory.createWindChillInCelsius();
-        windChillInCelsius.setNCelsius(BigDecimal.valueOf(31));
-        windChillInCelsius.setNWindSpeed(BigDecimal.valueOf(18));
+        windChillInCelsius.setNCelsius(BigDecimal.valueOf(2));
+        windChillInCelsius.setNWindSpeed(BigDecimal.valueOf(15));
 
         TemperatureConversionsSoapType service = new TemperatureConversions().getTemperatureConversionsSoap12();
-        BigDecimal actual = service.windChillInFahrenheit(
+        BigDecimal actual = service.windChillInCelsius(
                 windChillInCelsius.getNCelsius()
                 , windChillInCelsius.getNWindSpeed()
                 );
-        BigDecimal expected = BigDecimal.valueOf(-12.82);
+        BigDecimal expected = BigDecimal.valueOf(-10.715);
         assertEquals(expected, actual);
     }
     
